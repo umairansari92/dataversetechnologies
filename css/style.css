@@ -1,3 +1,59 @@
+/* Loader styles sabse upar, taake loader sabse pehle apply ho */
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Loader ke liye by default hidden */
+}
+#custom-loader {
+  position: fixed;
+  z-index: 99999;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #191d2b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.5s;
+}
+.loader-logo-spin {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader-spin 1.2s linear infinite;
+}
+.loader-logo-spin img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #64ffda;
+  box-shadow: 0 0 24px #64ffda44;
+}
+.loader-text {
+  color: #64ffda;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px #64ffda55;
+  animation: loader-fadein 1.2s ease-in-out infinite alternate;
+}
+@keyframes loader-spin {
+  100% { transform: rotate(360deg); }
+}
+@keyframes loader-fadein {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
 * {
   margin: 0%;
   padding: 0%;

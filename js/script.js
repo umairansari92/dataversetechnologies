@@ -214,7 +214,12 @@ window.addEventListener('load', function() {
   const loader = document.getElementById('custom-loader');
   if(loader) {
     loader.style.opacity = '0';
-    setTimeout(() => loader.style.display = 'none', 600);
+    setTimeout(() => {
+      loader.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Loader hatay to scroll wapas
+    }, 600);
+  } else {
+    document.body.style.overflow = 'auto';
   }
 });
 
