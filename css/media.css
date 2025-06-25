@@ -34,8 +34,8 @@
   .hero-text {
     font-size: 1.5rem;
   }
-  .typing-container {
-    font-size: 2rem;
+  .hero-section .hero-text .typing-container {
+    font-size: 3rem;
   }
   .hero_image {
     margin-left: 400px;
@@ -54,9 +54,11 @@
     padding: 14px 0px;
     font-size: 0.8rem;
   }
-
-  .hero_image {
-    width: 25%;
+.hero-section .image-container{
+  max-width: 80%;
+}
+  .hero-section .image-container .hero_image {
+    max-width: 70%;
   }
   .logo {
     width: 50%;
@@ -65,8 +67,8 @@
     flex-direction: row-reverse;
     justify-content: center;
   }
-  .hero-text {
-    font-size: 1.5rem;
+  .hero-section .hero-text {
+    font-size: 2.5rem;
     margin-top: 200px;
     max-width: 40%;
   }
@@ -97,13 +99,11 @@
     padding: 14px 0px;
     font-size: 0.8rem;
   }
-  .hero-text {
-    font-size: 1rem;
-    max-width: 30%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: -172px;
+  .hero-section .hero-text {
+    font-size: 3rem;
+    max-width: 90%;
+    max-height: 20%;
+    /* margin-top: -172px; */
   }
   .hero-section {
     flex-direction: column;
@@ -115,9 +115,14 @@
     margin: 0 auto;
     padding: 0;
   }
-  .hero_image {
-    width: 30%;
-    margin-bottom: 149px;
+
+    .hero-section .image-container{
+      max-width: 90%;
+      max-height: 50%;
+    }
+  .hero-section .image-container .hero_image {
+    max-width: 60%;
+    /* margin-bottom: 149px; */
   }
   .portfolios {
     display: grid;
@@ -341,7 +346,7 @@
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
     border: 1px solid white;
   }
@@ -364,6 +369,8 @@
   .hero-section .image-container .hero_image {
     width: 70%;
     margin: 25px auto;
+    align-items: center;
+    justify-content: center;
 
 
   }
