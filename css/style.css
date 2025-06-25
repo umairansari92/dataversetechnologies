@@ -165,6 +165,7 @@ nav ul li a:hover:before {
   width: 100%;
   display: flex;
   margin-top: 1rem;
+  flex-wrap: nowrap;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(109, 96, 96, 0.7)), url("../img/pxfuel.jpg");
   clip-path: polygon(1% 0%, 100% 0%, 100% 99%, 72% 82%, 1% 99%);
@@ -172,7 +173,7 @@ nav ul li a:hover:before {
 }
 
 /* Text styling within hero section */
-.hero-text {
+.hero-section .hero-text {
   font-size: 3rem;
   margin-left: 50px;
   margin-top: 300px;
@@ -189,7 +190,7 @@ nav ul li a:hover:before {
 }
 
 /* Container for centering the image */
-.image-container {
+.hero-section .image-container {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1546,7 +1547,8 @@ nav ul li a:hover:before {
 }
 
 .portfolio-item {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: none !important;
 }
 
 .portfolio-item.hidden {
@@ -1557,25 +1559,24 @@ nav ul li a:hover:before {
 }
 
 .portfolio-item.visible {
-  opacity: 1;
-  transform: scale(1);
-  pointer-events: auto;
-  position: relative;
+  /* animation: fadeInUp 0.6s ease forwards; */
+  animation: none !important;
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  from {}
+  to {}
 }
 
-.portfolio-item.visible {
-  animation: fadeInUp 0.6s ease forwards;
+.portfolio-item.in-view {
+  /* animation: inViewPop 0.7s cubic-bezier(0.4,0,0.2,1) both; */
+  animation: none !important;
+}
+
+@keyframes inViewPop {
+  0% {}
+  60% {}
+  100% {}
 }
 
 /* Mobile responsive for filtering */

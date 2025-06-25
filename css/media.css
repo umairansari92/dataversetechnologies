@@ -80,8 +80,8 @@
   }
 }
 
-@media screen and (max-width: 1200px){
-  .resume{
+@media screen and (max-width: 1200px) {
+  .resume {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -112,7 +112,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 auto;
     padding: 0;
   }
   .hero_image {
@@ -126,29 +126,6 @@
 }
 /* For screens with max-width 970px */
 @media screen and (max-width: 970px) {
-  .resume .base {
-    width: 100%;
-  }
-  .resume-bg .resume {
-    width: 100%;
-  }
-  .resume .func .work {
-    width: 100%;
-  }
-  .resume .func .edu {
-    width: 100%;
-  }
-
-  .resume .base .profile .photo {
-    width: 50%;
-    margin: 0 auto;
-  }
-  .resume .func .edu-work{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   nav ul li a {
     text-align: center;
     font-size: 1.8rem;
@@ -184,6 +161,25 @@
   #check:checked ~ ul {
     left: 0;
   }
+
+.hero-section {
+  margin: 0 auto;
+}
+.hero-section .hero-text {
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+.hero-section .image-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-section .image-container .hero_image {
+    width: 30%;
+  }
+  
   .footer {
     padding: 50px 20px;
   }
@@ -226,6 +222,31 @@
     padding-right: 0rem;
   }
 
+  /* =================RESUME====================== */
+  .resume .base {
+    width: 100%;
+  }
+  .resume-bg .resume {
+    width: 100%;
+  }
+  .resume .func .work {
+    width: 100%;
+  }
+  .resume .func .edu {
+    width: 100%;
+  }
+
+  .resume .base .profile .photo {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .resume .func .edu-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .contact-icons .contact-icon {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -262,11 +283,9 @@
 
 /* For screens with max-width 700px */
 @media screen and (max-width: 700px) {
-  .hero_image {
+  /* .hero_image {
     width: 30%;
-    margin-bottom: 149px;
-    margin-left: 200px;
-  }
+  } */
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -296,7 +315,7 @@
     justify-items: center;
     margin-left: -150px;
   }
-  
+
   .resume .func .skills-prog ul li .percentage {
     position: absolute;
     right: 50%;
@@ -411,34 +430,34 @@
     left: 20%;
   }
 
-.footer-section {
-  width: 100%;
-  .footer-section.about {
-    /* margin-left: -30px; */
-    max-width: 100%;
-  }
-  .footer-section.links {
-    margin-right: -35px;
-    max-width: 50%;
-  }
-  .container {
-    padding: 2rem 2.5rem !important;
-  }
+  .footer-section {
+    width: 100%;
+    .footer-section.about {
+      /* margin-left: -30px; */
+      max-width: 100%;
+    }
+    .footer-section.links {
+      margin-right: -35px;
+      max-width: 50%;
+    }
+    .container {
+      padding: 2rem 2.5rem !important;
+    }
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    max-width: 100%;
-  }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      /* flex-wrap: wrap; */
+      flex-direction: column;
+      max-width: 100%;
+    }
 
-  .resume .func .skills-prog ul li .percentage {
-    position: absolute;
-    right: 10%;
-    top: -10px;
+    .resume .func .skills-prog ul li .percentage {
+      position: absolute;
+      right: 10%;
+      top: -10px;
+    }
   }
-}
 }
 /* For screens with max-width 400px */
 @media screen and (max-width: 400px) {
@@ -477,4 +496,3 @@
     margin-left: -340px;
   }
 }
-

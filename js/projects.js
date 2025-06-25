@@ -56,17 +56,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.classList.remove('hidden');
                 item.classList.add('visible');
                 visibleCount++;
-                
-                // Add staggered animation
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'scale(1)';
-                }, visibleCount * 100);
+                // Remove animation: just reset styles
+                item.style.opacity = '';
+                item.style.transform = '';
             } else {
                 item.classList.add('hidden');
                 item.classList.remove('visible');
-                item.style.opacity = '0';
-                item.style.transform = 'scale(0.8)';
+                item.style.opacity = '';
+                item.style.transform = '';
             }
         });
         
@@ -97,19 +94,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Add hover effects to portfolio items
+    // Remove hover effects that animate card movement and shadow
     portfolioItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
             if (!this.classList.contains('hidden')) {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-                this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.3)';
+                this.style.transform = '';
+                this.style.boxShadow = '';
             }
         });
         
         item.addEventListener('mouseleave', function() {
             if (!this.classList.contains('hidden')) {
-                this.style.transform = 'translateY(0) scale(1)';
-                this.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
+                this.style.transform = '';
+                this.style.boxShadow = '';
             }
         });
     });
