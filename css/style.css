@@ -1,0 +1,1865 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #64ffda;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =================== HEADER  STYLING =================== */
+header {
+  font-size: 1.5rem;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #181b2a;
+}
+
+/* =================== NAVBAR  STYLING =================== */
+.topnav img {
+  /* display: block; */
+  width: 200px;
+  height: 100px;
+  padding: 0.5rem;
+  /* margin: 0.5rem 2rem; */
+  border-radius: 50%;
+  border: 1px solid #515a85;
+  background-color: rgb(31, 23, 23);
+  color: black;
+}
+/* .logo {
+  margin-left: 2rem;
+  max-width: 20px;
+} */
+nav {
+  border: 1px solid white;
+  border-color: white;
+  margin: 3px;
+  border-radius: 5px;
+}
+nav ul {
+  list-style-type: none;
+  margin-top: 28px;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 14px 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s,
+    border-bottom 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:before,
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+nav ul li a:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6347;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+nav ul li a:after {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ff6347;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+  background-color: #333;
+  color: #ff6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #ff6347;
+}
+
+nav ul li a:hover:before,
+nav ul li a:hover:after {
+  transform: scaleX(1) scaleY(1);
+}
+
+nav ul li a:hover:before {
+  transform-origin: left;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* ========== HERO SECTION STYLING ========== */
+
+/* General hero section styling */
+.hero-section {
+  height: 140vh;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(109, 96, 96, 0.7)), url("../img/pxfuel.jpg");
+  clip-path: polygon(1% 0%, 100% 0%, 100% 99%, 72% 82%, 1% 99%);
+  background-size: cover;
+}
+
+/* Text styling within hero section */
+.hero-text {
+  font-size: 3rem;
+  margin-left: 50px;
+  margin-top: 300px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Highlighted span within hero text */
+.hero-text h1 span {
+  color: #72777a;
+}
+
+/* Container for centering the image */
+.image-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Image styling */
+.hero_image {
+  width: 40%;
+  border-radius: 5%;
+  border: 1px solid #fff;
+  margin-left: 550px;
+  margin-top: 150px;
+}
+
+/* ========== HERO SECTION ANIMINATION ========== */
+.typing-container {
+  align-items: center;
+  font-size: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #72777a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =================== ABOUT PAGE STYLING =================== */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure it takes up full viewport height */
+  background-color: #000000;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.left-about {
+  border-bottom: 1px solid var(--color-grey-2);
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  padding: 2rem;
+}
+.left-about h4 {
+  justify-content: center;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: lavender;
+}
+
+.left-about p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  /* text-align: center; */
+  color: lavender;
+  margin-bottom: 1.5rem;
+  line-height: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+/* =================== TIMELINE STYLING =================== */
+
+.stat-title {
+  font-size: 2.5rem;
+  color: #64ffda;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  background: #121213;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background: #64ffda;
+}
+
+.tl-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-item .tl-icon {
+  background: #64ffda;
+  color: #0a192f;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.tl-content {
+  text-align: center;
+}
+
+.tl-duration {
+  font-size: 1rem;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item h5 {
+  font-size: 2.25rem;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.timeline-item h5 span {
+  color: #5b6361;
+  font-weight: bold;
+  text-align: center;
+}
+
+.timeline-item p {
+  color: #a8b2d1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-stats {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 2.5rem;
+  color: #64ffda;
+  margin-bottom: 2rem;
+}
+
+.progress-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 45%;
+  margin: 1rem;
+  background-color: #112240;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  padding: 1rem;
+}
+
+.prog-title {
+  font-size: 1.5rem;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.prog-text {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0;
+}
+
+.progress-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.progress {
+  width: 100%;
+  background-color: #112240;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .progress span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1.5s ease;
+}
+
+/* =================== PROGRESS BAR ANIMATIONS ===================== */
+
+@keyframes fillHTML {
+  from { width: 0%; }
+  to { width: 95%; }
+}
+
+@keyframes fillCSS {
+  from { width: 0%; }
+  to { width: 90%; }
+}
+
+@keyframes fillJS {
+  from { width: 0%; }
+  to { width: 60%; }
+}
+
+@keyframes fillReact {
+  from { width: 0%; }
+  to { width: 35%; }
+}
+
+@keyframes fillNode {
+  from { width: 0%; }
+  to { width: 50%; }
+}
+
+@keyframes fillPython {
+  from { width: 0%; }
+  to { width: 70%; }
+}
+
+/* Apply animations to progress bars */
+.progress .html {
+  background-color: #ff6b6b;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+.progress .css {
+  background-color: #64ffda;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+.progress .js {
+  background-color: #ffd166;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+.progress .react {
+  background-color: #45a29e;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+.progress .node {
+  background-color: #ffac45;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+.progress .python {
+  background-color: #4cb944;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+/* =================== FOOTER STYLING =================== */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 80px 0px 10px 0px;
+}
+
+.para {
+  max-width: 35%;
+  line-height: 2rem;
+  color: var(--color-grey-2);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.footer-section {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 3rem;
+}
+
+.footer-section h2 {
+  margin-bottom: 2rem;
+}
+
+.footer-section.about {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.footer-section.about .logo-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer-section.about .contact span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-section.about .socials a {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.footer-section.links ul {
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 10px;
+}
+.footer-section.links {
+ width: 45%;
+}
+.footer-section.links ul li a {
+  list-style: disc;
+  visibility: visible;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #8a8484;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s,
+    border-bottom 0.3s, text-shadow 0.3s;
+}
+
+.footer-section.links ul li a:before,
+.footer-section.links ul li a:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+.footer-section.links ul li a:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6347;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.footer-section.links ul li a:after {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ff6347;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.footer-section.links ul li a:hover {
+  transform: scale(1.1);
+  background-color: #333;
+  color: #ff6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #ff6347;
+}
+
+.footer-section.links ul li a:hover:before,
+.footer-section.links ul li a:hover:after {
+  transform: scaleX(1) scaleY(1);
+}
+
+.footer-section.links ul li a:hover:before {
+  transform-origin: left;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* =================== SOCIAL ICONS STYLING =================== */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-icons .contact-icon {
+  display: flex;
+}
+
+.contact-icons .contact-icon a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #555;
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-icons .contact-icon a:hover {
+  background-color: var(--color-secondary);
+}
+
+.contact-content-con .left-contact .contact-icon a:hover i {
+  color: var(--color-primary);
+}
+
+.contact-icons .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+/* =================== PORTFOLIO STYLING =================== */
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  /* position: relative; */
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
+}
+
+.port-text {
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-top: 3rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.portfolios .portfolio-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.portfolios .portfolio-item img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: #27ae60;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: #191d2b; /* Primary color (dark) */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: #ffffff; /* White icon color */
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: #ffffff; /* White background on hover */
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: #191d2b; /* Dark text on hover */
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =================== RESUME STYLING =================== */
+
+
+.resume-bg,
+.resume-bg:before,
+.resume-bg:after {
+  box-sizing: inherit;
+}
+
+.resume a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume h3 {
+  color: #ffb300;
+  margin: 10px 0;
+  text-transform: none;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.resume-bg .resume {
+  width: 1200px;
+  background: #000000;
+  color: #ffffff;
+  margin: 20px auto;
+  box-shadow: 10px 10px #0e1442;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.resume .base,
+.resume .func {
+  box-sizing: border-box;
+  float: left;
+}
+
+.resume .base > div,
+.resume .func > div {
+  padding-bottom: 10px;
+}
+
+.resume .base > div:last-of-type,
+.resume .func > div:last-of-type {
+  padding-bottom: 0;
+}
+
+.resume .base {
+  width: 61%;
+  padding: 30px 15px;
+  background: #333542;
+  color: #ffffff;
+}
+
+.resume .base .profile {
+  background: #ffb300;
+  padding: 30px 15px 40px 15px;
+  margin: -30px -15px 45px -15px;
+  position: relative;
+  z-index: 2;
+}
+
+.resume .base .profile::after {
+  content: "";
+  position: absolute;
+  background: #333542;
+  width: 100%;
+  height: 30px;
+  bottom: -15px;
+  left: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.resume .base .profile .photo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+
+.resume .base .profile .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume .base .profile .fa-rocket {
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
+  color: #0000;
+}
+
+.resume .base .profile .info {
+  text-align: center;
+  color: #ffffff;
+}
+
+.resume .base .profile .info .name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  color: #1a237e;
+  text-decoration: underline;
+}
+
+.resume .base .profile .info .job {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-transform: none;
+  color: #333542;
+}
+
+.resume .base .profile .info .specialization {
+  font-size: 20px;
+  color: #00adb5;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.resume .base .about .skills-section {
+  padding: 20px;
+  background-color: #162447;
+  color: #ffffff;
+}
+
+.resume .base .about .skills-section h2 {
+  font-size: 28px;
+  color: #ffc947;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resume .base .about .skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.resume .base  .about .skills-list li {
+  font-size: 14px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.resume .base .about .skills-list i {
+  margin-right: 10px;
+  color: #00adb5;
+}
+
+.resume .base .contact div {
+  line-height: 24px;
+}
+
+.resume .base .contact div a:hover {
+  color: #fdd835;
+}
+
+.resume .base .contact div a:hover span::after {
+  width: 100%;
+}
+
+.resume .base .contact div:hover i {
+  color: #fdd835;
+}
+
+.resume .base .contact div i {
+  color: #ffb300;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
+}
+
+.resume .base .contact div span {
+  position: relative;
+}
+
+.resume .base .contact div span::after {
+  content: "";
+  position: absolute;
+  background: #fdd835;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.resume .base .follow .box a {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.resume .base .follow .box a:hover i {
+  background: #fdd835;
+  border-radius: 5px;
+  transform: rotate(45deg) scale(0.8);
+}
+
+.resume .base .follow .box a:hover i::before {
+  transform: rotate(-45deg) scale(1.5);
+}
+
+.resume .base .follow .box i {
+  display: inline-block;
+  font-size: 30px;
+  background: #ffb300;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  color: #283593;
+  margin: 0 5px 5px 5px;
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box i::before {
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box i.fa::before {
+  display: block;
+}
+
+.resume .func {
+  width: 100%;
+  padding: 30px;
+}
+
+.resume .func:hover > div {
+  transition-duration: 0.5s;
+}
+
+.resume .func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+
+.resume .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+
+.resume .func h3 i {
+  color: #283593;
+  background: #ffb300;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+
+.resume .func .edu-work{
+  display: flex;
+  
+}
+.resume .func .work,
+.resume .func .edu {
+  float: left;
+}
+
+.resume .func .work small,
+.resume .func .edu small {
+  display: block;
+  opacity: 0.7;
+}
+
+.resume .func .work ul li,
+.resume .func .edu ul li {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+
+.resume .func .work ul li:hover::before,
+.resume .func .edu ul li:hover::before {
+  animation: circle 1.2s infinite;
+}
+
+.resume .func .work ul li:hover span,
+.resume .func .edu ul li:hover span {
+  color: #fdd835;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #fdd835;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+.resume .func .work ul li:first-of-type::before,
+.resume .func .edu ul li:first-of-type::before {
+  width: 10px;
+  height: 10px;
+  left: 1px;
+}
+
+.resume .func .work ul li:last-of-type,
+.resume .func .edu ul li:last-of-type {
+  padding-bottom: 3px;
+}
+
+.resume .func .work ul li:last-of-type::after,
+.resume .func .edu ul li:last-of-type::after {
+  border-radius: 1.5px;
+}
+
+.resume .func .work ul li::before,
+.resume .func .work ul li::after,
+.resume .func .edu ul li::before,
+.resume .func .edu ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.resume .func .work ul li::before,
+.resume .func .edu ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid #ffffff;
+  background: #ffb300;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+
+.resume .func .work ul li::after,
+.resume .func .edu ul li::after {
+  width: 3px;
+  height: 100%;
+  background: #ffffff;
+  left: 5px;
+  top: 0;
+}
+
+.resume .func .work ul li span,
+.resume .func .edu ul li span {
+  transition-duration: 0.3s;
+}
+
+.resume .func .work {
+  width: 48%;
+  background: #333542;
+  padding: 15px;
+  margin: 0 4% 15px 0;
+}
+
+.resume .func .edu {
+  width: 48%;
+  background: #333542;
+  padding: 15px;
+}
+
+/* <=============== SKILL PROGRESS STYLING ====================> */
+
+.resume .func .skills-prog {
+  clear: both;
+  background: #333542;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.resume .func .skills-prog ul {
+  margin-left: 15px;
+  list-style: none;
+}
+
+.resume .func .skills-prog ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition-duration: 0.3s;
+  padding: 5px 0;
+}
+
+.resume .func .skills-prog ul li:hover {
+  color: #fdd835;
+}
+
+.resume .func .skills-prog ul li:hover .skills-bar .bar {
+  background: #fdd835;
+  box-shadow: 0 0 10px rgba(253, 216, 53, 0.5);
+}
+
+.resume .func .skills-prog ul li span {
+  display: block;
+  width: 150px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.resume .func .skills-prog ul li .skills-bar {
+  background: #4a4a4a;
+  height: 8px;
+  width: calc(100% - 180px);
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.resume .func .skills-prog ul li .skills-bar .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #ffb300, #ffd700);
+  border-radius: 4px;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+  box-shadow: 0 0 5px rgba(255, 179, 0, 0.5);
+}
+
+.resume .func .skills-prog ul li .percentage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #ffb300;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  opacity: 1;
+  background: rgba(0,0,0,0.8);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #ffb300;
+  min-width: 40px;
+  text-align: center;
+}
+
+.resume .func .skills-prog ul li:hover .percentage {
+  opacity: 1;
+  color: #fdd835;
+  background: rgba(0,0,0,0.9);
+  border-color: #fdd835;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.resume .func .skills-soft {
+  clear: both;
+  background: #333542;
+  padding: 15px;
+  margin: 15px 0 0;
+}
+
+.resume .func .skills-soft ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.resume .func .skills-soft ul li {
+  position: relative;
+}
+
+.resume .func .skills-soft ul li:hover svg .cbar {
+  stroke: #fdd835;
+  stroke-width: 4px;
+}
+
+.resume .func .skills-soft ul li:hover span,
+.resume .func .skills-soft ul li:hover small {
+  transform: scale(1.2);
+}
+
+.resume .func .skills-soft ul li svg {
+  width: 95%;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+
+.resume .func .skills-soft ul li svg circle {
+  stroke-width: 1px;
+  stroke: #ffffff;
+}
+
+.resume .func .skills-soft ul li svg .cbar {
+  stroke-width: 3px;
+  stroke: #ffb300;
+  stroke-linecap: round;
+}
+
+.resume .func .skills-soft ul li span,
+.resume .func .skills-soft ul li small {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 52%;
+  transition-duration: 0.3s;
+}
+
+.resume .func .skills-soft ul li span {
+  top: 40%;
+}
+
+.resume .func .interests {
+  background: #333542;
+  margin: 15px 0 0;
+  padding: 15px;
+}
+
+.resume .func .interests-items {
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .func .interests-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.resume .func .interests-items div:hover i {
+  transform: scale(1.2);
+}
+
+.resume .func .interests-items div:hover span {
+  color: #fdd835;
+  transition-duration: 0.3s;
+}
+
+.resume .func .interests-items div i {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #ffb300;
+  transition-duration: 0.3s;
+}
+
+.resume .func .interests-items div span {
+  display: block;
+}
+
+/* =================== CONTACT SECTION ===================== */
+
+.container-contact {
+  margin: 4rem 3rem;
+}
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .left-contact .contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-content-con .left-contact .contact-icon a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-content-con .left-contact .contact-icon a:hover {
+  background-color: var(--color-secondary);
+}
+.contact-content-con .left-contact .contact-icon a:hover i {
+  color: var(--color-primary);
+}
+.contact-content-con .left-contact .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+.contact-content-con .right-contact .i-c-2 {
+  display: flex;
+}
+.contact-content-con .right-contact .i-c-2 :last-child {
+  margin-left: 1.5rem;
+}
+.contact-content-con .right-contact .submit-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* =================== FILTER SECTION STYLES ===================== */
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 45px 12px 20px;
+  border: 2px solid var(--color-grey-4);
+  border-radius: 25px;
+  background: var(--color-grey-5);
+  color: var(--color-white);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-grey-3);
+  font-size: 1.1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid var(--color-secondary);
+  background: transparent;
+  color: var(--color-secondary);
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+.portfolio-item {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+  position: absolute;
+}
+
+.portfolio-item.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  position: relative;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.portfolio-item.visible {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Mobile responsive for filtering */
+@media screen and (max-width: 768px) {
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .search-input {
+    padding: 10px 40px 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* =================== ADDITIONAL RESPONSIVE STYLING =================== */
+
+/* Mobile responsive improvements */
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .left-about {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .left-about h4 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
+    .left-about p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    
+    .stat-title {
+        font-size: 2rem;
+    }
+    
+    .timeline-item h5 {
+        font-size: 1.8rem;
+    }
+    
+    .progress-bar {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .prog-title {
+        font-size: 1.2rem;
+    }
+    
+    .prog-text {
+        font-size: 1rem;
+    }
+    
+    /* Resume page mobile improvements */
+    .resume .base,
+    .resume .func {
+        flex-direction: column;
+    }
+    
+    .resume .base > div,
+    .resume .func > div {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .resume .base .profile .info .name {
+        font-size: 2rem;
+    }
+    
+    .resume .base .profile .info .job {
+        font-size: 1.5rem;
+    }
+    
+    .resume .base .profile .info .specialization {
+        font-size: 1.2rem;
+    }
+    
+    .resume .func h3 {
+        font-size: 1.8rem;
+    }
+    
+    .resume .func .work ul li span,
+    .resume .func .edu ul li span {
+        font-size: 1.3rem;
+    }
+    
+    .resume .func .skills-prog ul li span {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablet responsive improvements */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-container {
+        padding: 2rem;
+    }
+    
+    .left-about {
+        width: 90%;
+    }
+    
+    .left-about h4 {
+        font-size: 3rem;
+    }
+    
+    .left-about p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    .progress-bar {
+        width: 48%;
+    }
+    
+    /* Resume page tablet improvements */
+    .resume .base .profile .info .name {
+        font-size: 2.5rem;
+    }
+    
+    .resume .base .profile .info .job {
+        font-size: 1.8rem;
+    }
+    
+    .resume .func h3 {
+        font-size: 2rem;
+    }
+}
+
+/* =================== ENHANCED ANIMATIONS =================== */
+
+/* Smooth transitions for all interactive elements */
+.resume .base .contact div a,
+.resume .base .follow .box a,
+.footer-section.links ul li a,
+.nav ul li a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced hover effects */
+.resume .base .contact div a:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 4px 8px rgba(100, 255, 218, 0.3);
+}
+
+.resume .base .follow .box a:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(100, 255, 218, 0.4);
+}
+
+/* Improved skills bar animations */
+.resume .func .skills-prog ul li .skills-bar .bar {
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resume .func .skills-prog ul li:hover .skills-bar .bar {
+    transform: scaleY(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Enhanced timeline animations */
+.timeline-item {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px -15px rgba(2, 12, 27, 0.8);
+}
+
+/* Improved progress bar animations */
+.progress span {
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =================== ACCESSIBILITY IMPROVEMENTS =================== */
+
+/* Focus states for better accessibility */
+.resume .base .contact div a:focus,
+.resume .base .follow .box a:focus,
+.footer-section.links ul li a:focus,
+.nav ul li a:focus {
+    outline: 2px solid #64ffda;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .resume .base .contact div a,
+    .resume .base .follow .box a,
+    .footer-section.links ul li a {
+        border: 1px solid currentColor;
+    }
+    
+    .progress span {
+        border: 1px solid #fff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .resume .base .contact div a,
+    .resume .base .follow .box a,
+    .footer-section.links ul li a,
+    .nav ul li a,
+    .timeline-item,
+    .progress span,
+    .resume .func .skills-prog ul li .skills-bar .bar {
+        transition: none;
+    }
+    
+    .timeline-item:hover,
+    .resume .base .contact div a:hover,
+    .resume .base .follow .box a:hover {
+        transform: none;
+    }
+}
+
+/* =================== PRINT STYLES =================== */
+
+@media print {
+    .resume-bg {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .resume .base .profile .photo img {
+        filter: grayscale(100%);
+    }
+    
+    .resume .base .follow .box a {
+        color: black !important;
+    }
+    
+    .footer {
+        display: none;
+    }
+    
+    .nav {
+        display: none;
+    }
+}
+
+/* On-scroll hover effect for portfolio cards */
+.portfolio-item.in-view {
+  border: 2px solid #64ffda;
+  box-shadow: 0 8px 32px rgba(100, 255, 218, 0.25), 0 1.5px 8px rgba(0,0,0,0.15);
+  transform: scale(1.04) translateY(-8px);
+  transition: box-shadow 0.4s cubic-bezier(0.4,0,0.2,1), border 0.4s, transform 0.4s;
+  z-index: 2;
+}
+
+/* Make sure mouse hover is still visually distinct and overrides .in-view */
+.portfolio-item.in-view:hover,
+.portfolio-item:hover {
+  border: 2.5px solid #27ae60;
+  box-shadow: 0 16px 48px rgba(39, 174, 96, 0.25), 0 2px 12px rgba(0,0,0,0.18);
+  transform: scale(1.07) translateY(-14px);
+}
+
+@keyframes inViewPop {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.92);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.04);
+  }
+}
+
+.portfolio-item.in-view {
+  animation: inViewPop 0.7s cubic-bezier(0.4,0,0.2,1) both;
+}

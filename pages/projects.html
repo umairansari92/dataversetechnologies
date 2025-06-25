@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/profile.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/profile.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/profile.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/profile.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../img/profile.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="../manifest.json">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="DataVerse Technologies - Projects">
+    <meta property="og:description" content="Full Stack Chatbot & Web Developer Portfolio">
+    <meta property="og:image" content="../img/profile.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DataVerse Technologies - Projects">
+    <meta name="twitter:description" content="Full Stack Chatbot & Web Developer Portfolio">
+    <meta name="twitter:image" content="../img/profile.png">
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="../js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tawk.to Live Chat Widget -->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65f8a8b8a0c6737bd12f8c8c/1hp8vqj8p';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K5EEQB813"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0K5EEQB813');
+    </script>
+
+    <title>DataVerse Technologies</title>
+</head>
+
+<body>
+
+
+    <!-- =================== NAVBAR SECTION ===================== -->
+
+
+    <nav class="topnav">
+        <div>
+            <img src="../img/logo.jpg" alt="logo" />
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <!-- <li><a href="./blog.html">Blog</a></li> -->
+        </ul>
+    </nav>
+
+
+
+    <!-- Portfolio Page -->
+    <section class="container" id="portfolio">
+        <div class="main-title">
+            <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+        </div>
+        <p class="port-text">
+            Here is some of my work that I've done in various programming languages.
+        </p>
+        
+        <!-- =================== SEARCH & FILTER SECTION ===================== -->
+        <div class="filter-section">
+            <div class="search-box">
+                <input type="text" id="projectSearch" placeholder="Search projects..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="chatbot">Chatbot</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="clone">Clones</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+            </div>
+        </div>
+        
+        <div class="portfolios" id="portfolioContainer">
+            <div class="portfolio-item" data-category="web chatbot" data-title="Ansari Cattle Farm Website With Chatbot">
+                <div class="image">
+                    <img src="../img/port1.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Ansari Cattle Farm Website <br> With Chatbot </h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/ansaricattlefarm" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_ansaricattlefarm-techinnovation-cattlefarming-activity-7209315381423886337-gOKH?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://ansaricattlefarm.vercel.app/" class="icon">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web chatbot" data-title="Internee.pk With Chatbot">
+                <div class="image">
+                    <img src="../img/port2.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Internee.pk With Chatbot</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/internee.pk" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_interneepk-webdevelopment-chatbot-activity-7208611107907739649--POg?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://internee-pk-chi.vercel.app/" class="icon">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web" data-title="Rent A Car Website">
+                <div class="image">
+                    <img src="../img/port3.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Rent A Car Website</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Rent-A-Car" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_hackathon-smit-webdevelopment-activity-7207684048079462402-1DOJ?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://pakistan-rent-a-car.vercel.app/index.html" class="icon">
+                            <i class="fab fa-briefcase"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web chatbot clone" data-title="GFS Builders Clone With Chatbot">
+                <div class="image">
+                    <img src="../img/port4.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>GFS Builders Clone With Chatbot</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/GFS-Builder-Clone" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_techproject-webdevelopment-chatbot-activity-7206791381862825984-v7M9?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://gfs-builder-clone.vercel.app/" class="icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web chatbot clone" data-title="SMIT Clone With Smart Chatbot">
+                <div class="image">
+                    <img src="../img/port5.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>SMIT Clone With Smart Chatbot</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/saylani-clone-with-chatbot" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_ai-tech-development-activity-7206430959792013312-Lc6N?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://saylani-clone.vercel.app/" class="icon">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ai" data-title="Google Teachable Machine">
+                <div class="image">
+                    <img src="../img/port6.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Google Teachable Machine</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/teachable-machine" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_ai-machinelearning-teachablemachine-activity-7208605937882873856-kPIs?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://teachable-machine-silk.vercel.app/" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="clone" data-title="Netflix Clone">
+                <div class="image">
+                    <img src="../img/Netflix Clone.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Netflix Clone</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/DataVerse-Technologies.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_netflixclone-webdevelopment-frontend-activity-7280961221078450176-WFvC?utm_source=share&utm_medium=member_desktop"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="app" data-title="Age And Generation Checker">
+                <div class="image">
+                    <img src="../img/age-and-generation-checker.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Age And Generation Checker</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Age-and-Generation-Checker" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_webdevelopment-javascript-vercel-activity-7314658623358418944-io-k?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfimaEByYXXeQ3QfjNw-5jSfqe6mZ27ceE"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://age-and-generation-checker.vercel.app/" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="app" data-title="Quiz App">
+                <div class="image">
+                    <img src="../img/Quiz App.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Quiz App</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Quiz-App.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_saylani-webdevelopment-quizapp-activity-7339014639084527617-TD83?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfimaEByYXXeQ3QfjNw-5jSfqe6mZ27ceE"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://quiz-app-hazel-zeta-56.vercel.app/" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="app" data-title="To Do App">
+                <div class="image">
+                    <img src="../img/To Do App.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>To Do App</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/To-Do-App.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/umairansari92_webdevelopment-javascript-todoapp-activity-7318508532687867904-OYdc?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfimaEByYXXeQ3QfjNw-5jSfqe6mZ27ceE"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://to-do-app-lime-mu.vercel.app/" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="clone" data-title="Apple Website Clone">
+                <div class="image">
+                    <img src="../img/Apple Clone.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Apple Website Clone</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Apple-Clone.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="app" data-title="Simple Calculator">
+                <div class="image">
+                    <img src="../img/Simple Calculator.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Simple Calculator</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Simple-Calculator.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="clone" data-title="Upwork Clone">
+                <div class="image">
+                    <img src="../img/Upwork Clone.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Upwork Clone</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Up-Work-Clone.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="clone" data-title="Hiring Mine Website Clone">
+                <div class="image">
+                    <img src="../img/Hiring Mine Clone.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Hiring Mine Website Clone</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Hiring-Mine-Clone.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a> -->
+                        <a href="https://www.hiringmine.com/" target="_blank" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web" data-title="Nikhaar Beauty Saloon">
+                <div class="image">
+                    <img src="../img/Nikhaar.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Nikhaar Beauty Saloon</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Nikhaar.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a> -->
+                        <a href="https://nikhaar.vercel.app/" target="_blank" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="app" data-title="Timer">
+                <div class="image">
+                    <img src="../img/Timer.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Timer</h3>
+                    <div class="icons">
+                        <a href="https://github.com/umairansari92/Timer.git" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#"
+                            class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="icon">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===================== FOOTER SECTION ===================== -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2 class="logo-text"><span>DataVerse</span> Technologies</h2>
+                    <p>
+                        DataVerse Technologies is committed to delivering innovative solutions using cutting-edge
+                        technologies.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> +923138624722</span>
+                        <span><i class="fas fa-envelope"></i> dataversetechnologies6@gmail.com</span>
+                    </div>
+                    <!-- <div class="socials">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                      </div> -->
+                </div>
+
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a class="active" href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-icons socials">
+            <div class="contact-icon socials">
+                <a href="https://www.facebook.com/munna.lalokhaiti" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/umairansari92" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/umairansari92" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/umair-ansari-a55251b2/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/umair.ansari.92/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=923138624722" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 DataVerse Technologies.
+        </div>
+    </footer>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+
+</html>
