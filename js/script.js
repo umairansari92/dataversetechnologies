@@ -209,6 +209,15 @@ document.addEventListener("DOMContentLoaded", () => {
   setupPortfolioFiltering(); // Add portfolio filtering setup
 });
 
+// Hide loader when page is fully loaded
+window.addEventListener('load', function() {
+  const loader = document.getElementById('custom-loader');
+  if(loader) {
+    loader.style.opacity = '0';
+    setTimeout(() => loader.style.display = 'none', 600);
+  }
+});
+
 (function () {
   [...document.querySelectorAll(".control")].forEach((button) => {
     button.addEventListener("click", function () {
