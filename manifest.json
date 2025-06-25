@@ -4,8 +4,8 @@
   "description": "Full Stack Chatbot & Web Developer Portfolio",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#007bff",
+  "background_color": "#191d2b",
+  "theme_color": "#191d2b",
   "icons": [
     {
       "src": "img/profile.png",
