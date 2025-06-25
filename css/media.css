@@ -343,6 +343,7 @@
     max-width: 90%;
     height: 100%;
     margin: 0 auto;
+    border: 1px solid white;
   }
 
 .hero-section .hero-text {
@@ -362,7 +363,8 @@
   }
   .hero-section .image-container .hero_image {
     width: 70%;
-    margin: 15px auto;
+    margin: 25px auto;
+
 
   }
 
