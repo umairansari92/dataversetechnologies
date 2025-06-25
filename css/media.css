@@ -358,7 +358,7 @@
     white-space: wrap;
     overflow: hidden;
   }
-  .hero_image {
+  .hero-section .image-container .hero_image {
     width: 60%;
     margin-bottom: 149px;
     margin-left: 200px;
