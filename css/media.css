@@ -175,6 +175,9 @@
   width: 100%;
   text-align: left;
 }
+.hero-section .hero-text .typing-container {
+    font-size: 2rem;
+  }
 .hero-section .image-container {
   justify-content: center;
   align-items: center;
@@ -365,6 +368,10 @@
     font-size: 1.5rem;
     white-space: wrap;
     overflow: hidden;
+  }
+
+  .hero-section .hero-text .typing-container {
+    font-size: 1.5rem;
   }
   .hero-section .image-container .hero_image {
     width: 70%;
