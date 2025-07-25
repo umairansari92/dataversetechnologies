@@ -7,6 +7,7 @@ const delayBetweenTitles = 2000; // Delay between titles
 
 function type() {
   if (charIndex < titles[titleIndex].length) {
+
     document.getElementById("typing-text").innerHTML +=
       titles[titleIndex].charAt(charIndex);
     charIndex++;
