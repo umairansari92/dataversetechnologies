@@ -340,6 +340,11 @@
     top: 137%;
     left: 20%;
   }
+
+  .contact-container .main-title h2 .bg-text {
+  font-weight: 600;
+  font-size: 4.3rem;
+}
 }
 
 /* For screens with max-width 600px */
@@ -490,6 +495,10 @@
     top: 170%;
     left: 10%;
   }
+
+    .contact-container .main-title h2 .bg-text {
+  display: none;
+}
 }
 
 /* For screens with max-width 350px */
@@ -505,4 +514,6 @@
     justify-items: center;
     margin-left: -340px;
   }
+
+
 }
